@@ -1,0 +1,129 @@
+.header {
+  background-color: #8E4A49;
+  height: 60px;
+  color: #FDFFFC;
+  font-size: 20px;
+}
+
+.header i {
+  font-size: 50px;
+}
+
+.header span {
+  border-left: 1px solid;
+  margin-left: 8px;
+  padding-left: 8px;
+}
+
+@media screen and (max-width: 437px) {
+  .header {
+    font-size: 16px;
+  }
+}
+
+.content-header {
+  background-color: #FDFFFC;
+}
+
+.content-header h2,
+.content-header p {
+  color: #8E4A49;
+}
+
+.circle {
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.625rem;
+  font-weight: 300;
+  height: 2.875rem;
+  line-height: 2.875rem;
+  text-align: center;
+  width: 2.875rem;
+  background-color: #8E562E;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.email {
+  opacity: 0.4;
+}
+
+.email-body {
+  background-color: #f5f5f5;
+}
+
+.email-body .body-content {
+  background-color: #FDFFFC;
+  min-height: 300px;
+  margin: 0 auto;
+  max-width: 650px;
+  width: 90%;
+}
+
+.list-group {
+  color: #8E4A49;
+}
+
+.color-blue-sky {
+  color: #448aff;
+}
+
+.color-green {
+  color: #008000;
+}
+
+.file-section .file-name {
+  font-size: 23px;
+}
+
+.file-section .fa-file-excel,
+.file-section .fa-user {
+  font-size: 25px;
+}
+
+.color-white {
+  color: #FFF;
+}
+
+.background-red {
+  background-color: #EC0000;
+}
+
+.btn-start {
+  background-color: #8E4A49;
+  border-color: #8E4A49;
+  color: #FFF;
+}
+
+.btn-start:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.btn-outline-wine {
+  color: #8E4A49;
+  border-color: #8E4A49;
+  background-color: transparent;
+}
+
+.btn-outline-wine:hover {
+  background-color: #8E4A49;
+  color: #FFF;
+  border-color: #8E4A49;
+}
+
+.color-blue {
+  color: #7AA8FF;
+}
+
+.email-microsoft {
+  font-weight: 500;
+}
+
+.link-fake {
+  cursor: pointer;
+}
+

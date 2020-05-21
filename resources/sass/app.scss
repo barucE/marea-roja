@@ -1,0 +1,136 @@
+$green: #53917E;
+$wine: #8E4A49;
+$blue: #7AA8FF;
+$cream: #FDFFFC;
+$brown: #8E562E;
+$gray: #f5f5f5;
+$blue-sky: #448aff;
+$green-office : #008000;
+$white: #FFF;
+$red: #EC0000;
+
+.header{
+	background-color: $wine;
+	height: 60px;
+	color: $cream;
+	font-size: 20px;
+
+	i{
+		font-size: 50px;
+	}
+
+	span{
+		border-left: 1px solid;
+	    margin-left: 8px;
+	    padding-left: 8px;
+	}
+
+	@media screen and (max-width:437px){ 
+		font-size: 16px;
+    }
+}
+
+.content-header{
+	background-color: $cream;
+
+	h2, p{
+		color: $wine;
+	}
+}
+
+.circle{
+	border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.625rem;
+    font-weight: 300;
+    height: 2.875rem;
+    line-height: 2.875rem;
+    text-align: center;
+    width: 2.875rem;
+    background-color: $brown;
+}
+
+.name{
+	font-weight: 500;
+}
+
+.email{
+	opacity: .4;
+}
+
+.email-body{
+	background-color: $gray;
+
+	.body-content{
+		background-color: $cream;
+	    min-height: 300px;
+	    margin: 0 auto;
+	    max-width: 650px;
+	    width: 90%;
+	}
+}
+
+.list-group{
+	color: $wine;
+}
+
+.color-blue-sky{
+	color: $blue-sky;
+}
+
+.color-green{
+	color: $green-office;
+}
+
+.file-section{
+	.file-name{
+		font-size: 23px;
+	}
+
+	.fa-file-excel, .fa-user{
+		font-size: 25px;
+	}
+}
+
+.color-white{
+	color: $white;
+}
+
+.background-red{
+	background-color: $red;
+}
+
+.btn-start{
+	background-color: $wine;
+	border-color: $wine;
+	color: $white;
+
+	&:hover{
+		filter: brightness(0.9);
+	}
+}
+
+.btn-outline-wine{
+	color: $wine;
+	border-color: $wine;
+	background-color: transparent;
+
+	&:hover{
+		background-color: $wine;
+		color: $white;
+		border-color: $wine;
+	}
+}
+
+.color-blue{
+	color: $blue;
+}
+
+.email-microsoft{
+	font-weight: 500;
+}
+
+.link-fake{
+	cursor: pointer;
+}
