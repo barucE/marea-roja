@@ -1,7 +1,7 @@
 @extends('layout', ['title' => 'Pregunta 2 de 5',
-					'headerTitle' => 'Este caso contiene un enlace a una foto',
-					'headerDescription'  => 'El usuario puede ser conocido, pero es mejor revisar dos veces, o más.',
-					'headerDescriptionAnswer'  => 'Aunque el usuario remitente pueda parecer conocido y confiable; sino tenemos la suficiente certeza, debemos de hacer una doble revisión de hacia dónde nos llevan los enlaces.'])
+					'headerTitle' => 'En este caso el correo contiene un enlace a una foto.',
+					'headerDescription'  => 'El usuario puede ser conocido, pero es mejor revisar dos veces.',
+					'headerDescriptionAnswer'  => 'Aunque el remitente pueda parecerte conocido, debes revisar hacia dónde te lleva el enlace.'])
 
 @section('optionButtons')
 <div class="button-options">
@@ -23,5 +23,5 @@
 		</div>
 	</div>
 </div>
-@include('modal_information', ['details' => ['La dirección es engañosa, a simple vista creemos que se dirigirá a Google Drive, pero en realidad nos está llevando a otro dominio, este es "share.in"']])
+@include('modal_information', ['details' => ['La dirección es engañosa. A simple vista parece que te dirige hacia Google Drive, pero en realidad te lleva a otro dominio: share.in.']])
 @endsection

@@ -1,7 +1,7 @@
 @extends('layout', ['title' => 'Pregunta 4 de 5',
-					'headerTitle' => '¡Al fin te ha llegado el Plan Financiero!',
-					'headerDescription' => 'El archivo parece confiable, pero no por eso lo abriremos sin revisar la URL. Al final la decisión es tuya, ¿abrirás el archivo?.',
-					'headerDescriptionAnswer' => 'Ten cuidado con los hiperenlaces y los archivos adjuntos que abras en los correos electrónicos: es posible que te dirijan a sitios web fraudulentos en los que se te solicite información confidencial.'])
+					'headerTitle' => '¡Al fin te ha llegado el plan financiero!',
+					'headerDescription' => 'El fichero parece confiable. No obstante, debes revisar la URL. La decisión es tuya, ¿abrirías el fichero?',
+					'headerDescriptionAnswer' => 'Ten cuidado con los hiperenlaces y los ficheros adjuntos presentes en los correos electrónicos. Es posible que te dirijan a sitios fraudulentos en los que se te solicite información confidencial.'])
 
 @section('optionButtons')
 <div class="button-options">
@@ -33,5 +33,5 @@
 		</div>
 	</div>
 </div>
-@include('modal_information', ['details' => ['Si revisas el link del documento y el botón "Abrir en Documentos", verás que dirige a un dominio parecido y no seguro: "drive--google.com".']])
+@include('modal_information', ['details' => ['Si revisas el enlace del documento y el botón "Abrir en Documentos", verás que te dirigen a un dominio parecido al original e inseguro: "drive--google.com".']])
 @endsection

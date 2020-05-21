@@ -13,7 +13,8 @@
 	<div class="container-fluid header d-flex align-items-center">
 		<div class="row w-100">
 			<div class="content-wrap d-flex align-items-center col-6">
-				<i class="fas fa-fish"></i><span>Marea Roja</span>
+				<a href="{{ route('register.index') }}"><i class="fas fa-fish"></i></a>
+				<span>Marea Roja</span>
 			</div>
 			<div class="content-wrap d-flex align-items-center justify-content-end col-6">
 				<span>{{ $title }}</span>
@@ -24,7 +25,7 @@
 	<div class="container-fluid py-4 content-header">
 		<div class="content text-center">
 			<h2 id="headerTitle">{{ $headerTitle }}</h2>
-			<p class="my-4 px-4" id="headerDescription">{{ $headerDescription }}</p>
+			<p class="my-4 px-4" id="headerDescription">{!! $headerDescription !!}</p>
 			<p class="d-none" id="headerDescriptionAnswer">{{ isset($headerDescriptionAnswer) ? $headerDescriptionAnswer : '' }}</p>
 			@yield('optionButtons')
 		</div>

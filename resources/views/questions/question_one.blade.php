@@ -1,7 +1,7 @@
 @extends('layout', ['title' => 'Pregunta 1 de 5',
-					'headerTitle' => '¡Tienes un paquete en espera!',
-					'headerDescription'  => 'Recibes un correo acerca de que tienes un paquete pendiente de entrega; además tienes que pagar un importe para que este se libere. Tú decides.',
-					'headerDescriptionAnswer'  => 'Estos casos de phishing siempre tratan de transmitir urgencia. Pero recuerda que siempre tienes la oportunidad de contactar a la empresa o autoridades.'])
+					'headerTitle' => '¡Tu paquete te espera!',
+					'headerDescription'  => 'Recibes un correo indicándote que debes pagar un importe para liberar un paquete pendiente de entrega. ¿Qué decisión tomas?',
+					'headerDescriptionAnswer'  => 'Estos casos de phishing tratan de transmitir urgencia. Recuerda que tienes la opción de contactar a la empresa o a las autoridades.'])
 
 @section('optionButtons')
 <div class="button-options">
@@ -33,5 +33,5 @@
 		</div>
 	</div>
 </div>
-@include('modal_information', ['details' => ['Si observamos la dirección de correo electrónico, nos damos cuenta que proviene de "correos.co.es", Correos usa "correos.es".', 'Además, es necesario observar el botón que se muestra en el cuerpo, el cuál nos llevará a la siguiente página: "http://correos.co.es/index/payment"', 'Si una institución supuestamente se está poniendo en contacto contigo, pero no está dirigido a tu nombre, sospecha.' ]])
+@include('modal_information', ['details' => ['Al observar el correo electrónico, puedes notar que el remitente es: correos.co.es. Sin embargo, Correos de España utiliza el dominio: correos.es.', 'Es necesario verificar el enlace dentro del botón “Haga clic aquí”. En este caso, este dirige a una página ilegítima: http://correos.co.es/index/payment', 'Si una institución se pone en contacto contigo sin dirigirse a tu nombre, sospecha.' ]])
 @endsection

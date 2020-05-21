@@ -1,7 +1,7 @@
 @extends('layout', ['title' => 'Pregunta 5 de 5',
 					'headerTitle' => '¡Vaya, creo que tienes un problema!',
-					'headerDescription'  => 'Antes de recuperar tu tarjeta, toma tus precauciones y revisa los enlaces externos. O tal vez quieras dar click y seguir las instrucciones desde el sitio web.',
-					'headerDescriptionAnswer'  => 'En caso de que el correo proceda de una entidad bancaria legítima, nunca contendrá enlaces a su página de inicio de sesión o documentos adjuntos.'])
+					'headerDescription'  => 'Antes de recuperar tu tarjeta, toma tus precauciones y revisa los enlaces externos. O tal vez quieras dar clic y seguir las instrucciones desde el sitio web.',
+					'headerDescriptionAnswer'  => 'En caso de que el correo provenga de una entidad bancaria legítima, nunca te pedirá datos confidenciales como el nombre de usuario, la contraseña o token.'])
 
 @section('optionButtons')
 <div class="button-options">
@@ -32,5 +32,5 @@
 		</div>
 	</div>
 </div>
-@include('modal_information', ['details' => ['Como hemos visto en otros casos, es esencial revisar el correo electrónico del remitente; en este caso, si revisamos la web del banco, tiene algo diferente: "gruposantander.news.es".', 'Haciendo el mismo ejercicio para el botón "Responder", nos damos cuenta que este nos envía a: "https://particulares.gruposantander.es".', 'Otro aspecto importante, aunque a veces no a simple vista, son las faltas de ortografía y gramática.']])
+@include('modal_information', ['details' => ['Como lo hemos visto en otros casos, es esencial revisar el correo electrónico del remitente. En este caso, si revisamos el dominio, notamos que no es el oficial del banco: "gruposantander.news.es".', 'Así mismo, el botón "Responder" envía a un enlace fraudulento: https://particulares.gruposantander.es.', 'Otro aspecto importante son las faltas de ortografía y de gramática. Los correos maliciosos suelen tener este tipo de faltas.']])
 @endsection

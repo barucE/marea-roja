@@ -21,6 +21,15 @@
   }
 }
 
+.header a {
+  color: #FFF;
+}
+
+.header a:hover {
+  color: #FFF;
+  text-decoration: unset;
+}
+
 .content-header {
   background-color: #FDFFFC;
 }
@@ -125,5 +134,10 @@
 
 .link-fake {
   cursor: pointer;
+}
+
+.content-header i {
+  font-size: 95px;
+  color: #8E4A49;
 }
 
