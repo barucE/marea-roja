@@ -1,7 +1,7 @@
 @extends('layout', ['title' => 'Pregunta 3 de 5',
-					'headerTitle' => 'Al parecer se ha cambiado tu contraseña',
-					'headerDescription'  => 'Supongamos que tu correo electrónico pertenece a los dominios de Microsoft. ¿Te confías del siguiente correo electrónico?',
-					'headerDescriptionAnswer'  => 'No todos los correos son maliciosos. Este, por ejemplo, es uno legítimo de Microsoft a pesar de que hagan dudar algunos enlaces o la misma dirección de correo.'])
+					'headerTitle' => 'Al parecer tu contraseña ha sido cambiada.',
+					'headerDescription'  => 'Supongamos que tu correo electrónico pertenece a los dominios de Microsoft. ¿Confiarías en el correo siguiente?',
+					'headerDescriptionAnswer'  => 'No todos los correos son maliciosos. Este, por ejemplo, es legítimo a pesar de que algunos enlaces o la misma dirección te hagan dudar.'])
 
 @section('optionButtons')
 <div class="button-options">
@@ -43,5 +43,5 @@
 		</div>
 	</div>
 </div>
-@include('modal_information', ['details' => ['La dirección de correo "account-security-noreply@accountprotection.microsoft.com" nos hace dudar, pero es desde esta que Microsoft suele mandar este tipo de mensajes.','Si observamos los enlaces de la parte de abajo, todos pertenecen legítimamente a Microsoft: <ul><li>https://account.live.com/pw</li><li>https://account.live.com/Proofs/Manage</li><li>http://go.microsoft.com/fwlink/?LinkID=261330</li></ul>']])
+@include('modal_information', ['details' => ['La dirección de correo "account-security-noreply@accountprotection.microsoft.com" hace dudar, pero es desde esta que Microsoft suele enviar este tipo de mensajes.','Si observamos los enlaces, todos pertenecen legítimamente a Microsoft: <ul><li>https://account.live.com/pw</li><li>https://account.live.com/Proofs/Manage</li><li>http://go.microsoft.com/fwlink/?LinkID=261330</li><li>https://account.live.com/SecurityNotifications/Update</li></ul>']])
 @endsection

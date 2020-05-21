@@ -17,8 +17,12 @@ class Question extends Controller
             $questions_array = array(1 => 'one', 2 => 'two', 3 => 'three', 4 => 'four', 5 => 'five');
             $question_number = session('question', 0);
             if((session()->has('question_answer') && session('question_answer')) || $question_number == 0){
+                $isSaved = session('is_saved', false);
                 if($question_number == 5){
-                    Register::create();
+                    if(!$isSaved){
+                        Register::create();
+                        session(['is_saved' => true]);
+                    }
                     return view('test_complete');
                 }
                 $question_number++;

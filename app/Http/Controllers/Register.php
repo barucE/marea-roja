@@ -14,8 +14,18 @@ class Register extends Controller
      */
     public function index()
     {
-        session()->forget(['name','country','career','email','gender', 'question', 'question_answer', 'score']);
-        return view('register/index');
+        session()->forget(['name','country','career','email','gender', 'question', 'question_answer', 'score', 'is_saved']);
+        $careers = array("Big Data and Business Intelligence",
+                            "Ciberseguridad",
+                            "Creación y Aceleración Empresarial MICAE",
+                            "Dirección de Comunicación Corporativa y Marketing digital",
+                            "Dirección de Comunicación y Marketing Corporativo",
+                            "Economía verde",
+                            "Inteligencia Turística: Gestión y Competitividad Internacional",
+                            "International Business MIB",
+                            "Marketing Turístico",
+                            "Otra");
+        return view('register/index', compact('careers'));
     }
 
     /**

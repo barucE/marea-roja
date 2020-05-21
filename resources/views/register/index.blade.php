@@ -18,19 +18,25 @@
 					    <input type="email" class="form-control  {{ $errors->has('email') ? 'is-invalid' : ''}}" id="email" name="email" value="{{ old('email')}}" placeholder="pecesito@marearoja.net">
 					  </div>
 					  <div class="form-group">
-					    <label for="career">Carrera</label>
-					    <input type="text" class="form-control  {{ $errors->has('career') ? 'is-invalid' : ''}}" id="career" name="career" value="{{ old('career')}}" placeholder="Ciberseguridad">
+					    <label for="career">Carrera en Next</label>
+					    <select class="form-control  {{ $errors->has('career') ? 'is-invalid' : ''}}" id="career" name="career" value="{{ old('career')}}" >
+					      <option value="">Selecciona una opción</option>
+					      @foreach($careers as $careerOp)
+					      <option value="{{$careerOp}}" {{ ($careerOp == old('career') ? "selected" : "") }}>{{$careerOp}}</option>
+					      @endforeach
+					    </select>
 					  </div>
 					  <div class="form-group">
-					    <label for="country">País</label>
+					    <label for="country">País de origen</label>
 					    <input type="text" class="form-control  {{ $errors->has('country') ? 'is-invalid' : ''}}" id="country" name="country" value="{{ old('country')}}" placeholder="España">
 					  </div>
 					  <div class="form-group">
 					    <label for="gender">Sexo</label>
 					    <select class="form-control  {{ $errors->has('gender') ? 'is-invalid' : ''}}" id="gender" name="gender" value="{{ old('gender')}}" >
-					      <option>Femenino</option>
-					      <option>Masculino</option>
-					      <option>Otro</option>
+					      <option value="">Selecciona una opción</option>
+					      <option {{ (old('gender') == "Femenino" ? "selected" : "") }}>Femenino</option>
+					      <option {{ (old('gender') == "Masculino" ? "selected" : "") }}>Masculino</option>
+					      <option {{ (old('gender') == "Otro" ? "selected" : "") }}>Otro</option>
 					    </select>
 					  </div>
 				  </div>

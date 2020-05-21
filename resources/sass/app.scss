@@ -28,6 +28,15 @@ $red: #EC0000;
 	@media screen and (max-width:437px){ 
 		font-size: 16px;
     }
+
+    a{
+    	color: $white;
+    	
+    	&:hover{
+    		color: $white;
+    		text-decoration: unset;
+    	}
+    }
 }
 
 .content-header{
@@ -133,4 +142,11 @@ $red: #EC0000;
 
 .link-fake{
 	cursor: pointer;
+}
+
+.content-header{
+	i{
+		font-size: 95px;
+		color: $wine;
+	}
 }
