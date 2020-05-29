@@ -11,11 +11,11 @@
 				  <div class="card-body">
 					  <div class="form-group">
 					    <label for="name">Nombre</label>
-					    <input type="text" class="form-control {{ $errors->has('name') ? 'is-invalid' : ''}}" value="{{ old('name')}}" id="name" name="name" placeholder="Marea Roja" >
+					    <input type="text" class="form-control {{ $errors->has('name') ? 'is-invalid' : ''}}" value="{{ old('name')}}" id="name" name="name" placeholder="Marea Roja" maxlength="80">
 					  </div>
 					  <div class="form-group">
 					    <label for="email">Correo electrónico</label>
-					    <input type="email" class="form-control  {{ $errors->has('email') ? 'is-invalid' : ''}}" id="email" name="email" value="{{ old('email')}}" placeholder="pecesito@marearoja.net">
+					    <input type="email" class="form-control  {{ $errors->has('email') ? 'is-invalid' : ''}}" id="email" name="email" value="{{ old('email')}}" placeholder="pecesito@marearoja.net" maxlength="100">
 					  </div>
 					  <div class="form-group">
 					    <label for="career">Carrera en Next</label>
@@ -28,7 +28,7 @@
 					  </div>
 					  <div class="form-group">
 					    <label for="country">País de origen</label>
-					    <input type="text" class="form-control  {{ $errors->has('country') ? 'is-invalid' : ''}}" id="country" name="country" value="{{ old('country')}}" placeholder="España">
+					    <input type="text" class="form-control  {{ $errors->has('country') ? 'is-invalid' : ''}}" id="country" name="country" value="{{ old('country')}}" placeholder="España" maxlength="70">
 					  </div>
 					  <div class="form-group">
 					    <label for="gender">Sexo</label>

@@ -54,11 +54,11 @@ class Register extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            "name" => 'required',
-            "career" => 'required',
-            "email" => 'required|email',
-            "gender" => 'required',
-            "country" => 'required'
+            "name" => 'required|max:80',
+            "career" => 'required|max:80',
+            "email" => 'required|email|max:100',
+            "gender" => 'required|max:30',
+            "country" => 'required|max:70'
         ]);
 
         session(['name' => $request->name,
